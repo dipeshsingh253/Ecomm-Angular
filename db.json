@@ -1,0 +1,34 @@
+{
+  "seller": [
+    {
+      "name": "Dipesh",
+      "password": "password",
+      "email": "dj@mail.com",
+      "id": 1
+    },
+    {
+      "name": "Pankaj",
+      "password": "password",
+      "email": "pankaj@mail.com",
+      "id": 2
+    },
+    {
+      "name": "Kiran",
+      "password": "alien",
+      "email": "kiran@mail.com",
+      "id": 3
+    },
+    {
+      "name": "ben",
+      "password": "pass",
+      "email": "ben@mail.com",
+      "id": 4
+    },
+    {
+      "name": "Naruto",
+      "password": "pass",
+      "email": "naruto@mai.com",
+      "id": 5
+    }
+  ]
+}
