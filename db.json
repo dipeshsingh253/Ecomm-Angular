@@ -29,6 +29,24 @@
       "password": "pass",
       "email": "naruto@mai.com",
       "id": 5
+    },
+    {
+      "name": "Kira",
+      "password": "kira",
+      "email": "kira@mail.com",
+      "id": 6
+    },
+    {
+      "name": "Prapti",
+      "password": "password",
+      "email": "prapti@mail.com",
+      "id": 7
+    },
+    {
+      "name": "mayuri",
+      "password": "pass",
+      "email": "mayuri@mail.com",
+      "id": 8
     }
   ]
 }
