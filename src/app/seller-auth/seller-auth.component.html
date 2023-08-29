@@ -4,6 +4,7 @@
 
     <div *ngIf="toggleForm"class="sign-up">
         <h1>Seller Sign-up</h1>
+        <p class="error-p">{{authError}}</p>
         <form class="common-form" #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)">
             <input  class="form-input" type="text" name="name" ngModel placeholder="Enter your name">
             <input class="form-input" type="password" name="password" ngModel placeholder="Enter your password">
@@ -15,9 +16,9 @@
 
 
     <!-- seller login -->
-
     <div *ngIf="!toggleForm" class="login">
         <h1>Seller Login</h1>
+        <p class="error-p">{{authError}}</p>
         <form class="common-form" #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)">
             <input class="form-input" type="text" name="email" ngModel placeholder="Enter your email">
             <input class="form-input" type="password" name="password" ngModel placeholder="Enter your password">

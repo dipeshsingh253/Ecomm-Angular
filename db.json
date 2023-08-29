@@ -47,6 +47,12 @@
       "password": "pass",
       "email": "mayuri@mail.com",
       "id": 8
+    },
+    {
+      "name": "rahul",
+      "password": "pass",
+      "email": "rah@mail.com",
+      "id": 9
     }
   ]
 }
