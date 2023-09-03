@@ -8,7 +8,8 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
  
-  menuType = "default";
+  sellerName : string = "";
+  menuType : string = "default";
 
   constructor(private route : Router){}
 
@@ -16,14 +17,23 @@ export class HeaderComponent {
     this.route.events.subscribe((val : any) => {
       if(val.url){
         if(localStorage.getItem("seller") && val.url.includes("seller")){
-          console.warn("Seller page");
           this.menuType = "seller";
+          if(localStorage.getItem("seller")){
+            let sellerStorage =  localStorage.getItem("seller");
+            let sellerData = sellerStorage && JSON.parse(sellerStorage)[0];
+            this.sellerName = sellerData.name;
+          }
         }else{
           console.warn("User page");
           this.menuType = "default";
         }
       }
     })
+  }
+
+  logout(){
+    localStorage.removeItem("seller");
+    this.route.navigate(["/"]);
   }
 
 }

@@ -60,5 +60,15 @@
       "email": "test@mail.com",
       "id": 10
     }
+  ],
+  "product": [
+    {
+      "name": "Oppo F19",
+      "price": 28000,
+      "category": "Smartphone",
+      "color": "Cosmic Black",
+      "description": "Indias first 5g smartphone",
+      "id": 1
+    }
   ]
 }

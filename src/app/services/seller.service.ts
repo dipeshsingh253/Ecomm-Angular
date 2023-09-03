@@ -36,7 +36,6 @@ export class SellerService {
     this.http
     .get(`${this.BASE_URL}/seller?email=${data.email}&password=${data.password}`,{observe : "response"})
     .subscribe((res : any) => {
-      console.warn(res);
       if(res && res.body && res.body.length){
         this.isSellerLoggedIn.next(true);
         localStorage.setItem("seller",JSON.stringify(res.body));
