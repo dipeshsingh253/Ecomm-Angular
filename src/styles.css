@@ -4,6 +4,10 @@ body{
     font-family: sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 .container{
     margin-left: 5%;
     margin-right: 5%;

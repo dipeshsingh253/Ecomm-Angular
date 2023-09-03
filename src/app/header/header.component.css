@@ -4,9 +4,12 @@
 }
 
 .nav h1 {
-    color: blueviolet;
     font-size: 40px;
     margin: 0;
+}
+
+.nav h1 a{
+    color: blueviolet;
 }
 
 .nav ul {

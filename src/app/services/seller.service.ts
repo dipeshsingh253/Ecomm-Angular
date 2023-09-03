@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 })
 export class SellerService {
 
+  BASE_URL : string = "http://localhost:3000"
+
   isSellerLoggedIn = new BehaviorSubject<boolean>(false);
   isLoginFailed = new EventEmitter<boolean>(false);
   isSignUpFailed = new EventEmitter<boolean>(false);
@@ -17,7 +19,7 @@ export class SellerService {
     const git_workspace = "https://studious-winner-p6xxq6wvgrw2rq6r-3000.app.github.dev/seller";
     const local_workspace = "http://localhost:3000/seller";
     this.http
-    .post("https://studious-winner-p6xxq6wvgrw2rq6r-3000.app.github.dev/seller",data, {observe : "response"})
+    .post(local_workspace,data, {observe : "response"})
     .subscribe((res : any) => {
       if(res && res.body){
         this.isSellerLoggedIn.next(true);
@@ -32,7 +34,7 @@ export class SellerService {
 
   userLogin(data : Login){
     this.http
-    .get(`https://studious-winner-p6xxq6wvgrw2rq6r-3000.app.github.dev/seller?email=${data.email}&password=${data.password}`,{observe : "response"})
+    .get(`${this.BASE_URL}/seller?email=${data.email}&password=${data.password}`,{observe : "response"})
     .subscribe((res : any) => {
       console.warn(res);
       if(res && res.body && res.body.length){

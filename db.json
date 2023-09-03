@@ -53,6 +53,12 @@
       "password": "pass",
       "email": "rah@mail.com",
       "id": 9
+    },
+    {
+      "name": "test-user",
+      "password": "password",
+      "email": "test@mail.com",
+      "id": 10
     }
   ]
 }
